@@ -44,3 +44,43 @@ if (a >= 0 && b >= 0 && a >= b) {
 } else if (a && b) {
     alert(a + b);
 }
+
+// Задание 4
+// Сложение;
+function addition(a, b) {
+    return (a + b)
+}
+// Вычитание;
+function subtraction(a, b) {
+    return (a - b)
+}
+// Деление;
+function division(a, b) {
+    return (a / b)
+}
+// Умножение;
+function multiplication(a, b) {
+    return (a * b)
+}
+
+// Задание 5
+let arg1 = +prompt("Введите первое число");
+let arg2 = +prompt("Введите второе число");
+
+function mathOperation(arg1, arg2, operation) {
+    switch (operation) {
+        case "a + b":
+            return addition(arg1, arg2);
+        case "a - b":
+            return subtraction(arg1, arg2);
+        case "a / b":
+            return division(arg1, arg2);
+        case "a * b":
+            return multiplication(arg1, arg2);
+    }
+}
+
+console.log(mathOperation(arg1, arg2, "a + b"));
+console.log(mathOperation(arg1, arg2, "a - b"));
+console.log(mathOperation(arg1, arg2, "a / b"));
+console.log(mathOperation(arg1, arg2, "a * b"));
