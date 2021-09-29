@@ -28,37 +28,34 @@ class Product {
 let obj2 = new Product('Sergey', 50);
 obj2.make25PercentDiscount();
 
-// // Задание 1.2
-// function Post(author, text, date) {
-//     this.author = author;
-//     this.text = text;
-//     this.date = date;
-// }
+// Задание 1.2
+function Post(author, text, date) {
+    this.author = author;
+    this.text = text;
+    this.date = date;
+}
 
-// Post.prototype.show = function () {
-//     alert(this.author);
-//     alert(this.text);
-//     alert(this.date);
-// }
+Post.prototype.edit = function () {
+    alert(this.text);
+};
 
-// let edit = ;
-// let obj1 = new Product('Sergey', edit, 'date');
-// obj1.show();
+let bObj = new Post('Author', 'text', 'date');
+bObj.edit();
 
-// //ES6 
-// class Product {
-//     constructor(name, price) {
-//         this.name = name;
-//         this.price = price * make25PercentDiscount;
-//     }
+//ES6 
+class Post {
+    constructor(author, text, date) {
+        this.author = author;
+        this.text = text;
+        this.date = date;
+    }
 
-//     show() {
-//         alert(this.name);
-//         alert(this.price);
-//     }
-// }
+    edit() {
+        alert(this.text);
+    }
+}
 
-// let make25PercentDiscount = 0.75;
-// let obj2 = new Product('Sergey', 50);
-// obj2.show();
+let bObj = new Post('Author', 'text', 'date');
+bObj.edit();
+
 
