@@ -236,6 +236,47 @@
     display: none;
 }
 
+.cart {
+    position: absolute;
+    z-index: 3;
+    right: 0;
+    top: 37px;
+    background: white;
+    padding: 10px;
+    border: 1px solid #ebebeb;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+@media (min-width: 340px) {
+    .cart {
+        font-size: 16px;
+    }
+}
+@media (min-width: 552px) {
+    .cart {
+        width: 500px;
+    }
+}
+
+.cart-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ebebeb;
+    padding-bottom: 10px;
+}
+
+.cart-header {
+    font-weight: bold;
+}
+
+.cart-total {
+    font-weight: bold;
+    text-align: right;
+}
+
 /* Catalog==============basket===================== */
 
 /* Catalog--------------arrivals------------------- */

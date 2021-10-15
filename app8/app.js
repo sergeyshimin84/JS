@@ -70,6 +70,17 @@ document.addEventListener('click', event => {
     }
 });
 
+// function cartHidden() {
+//     let name = [];
+//     let quantity = [];
+//     let price = [];
+//     cart.forEach(i => [name, quantity, price].push(i));
+
+//     document.querySelector('div.cart-row-data').textContent = name.join(' ');
+//     document.querySelector('div.cart-row-data').textContent = quantity.join(' ');
+//     document.querySelector('div.cart-row-data').textContent = price.join(' ');
+// }
+
 // увеличение количества товара
 const plusFunction = id => {
     cart[id]['quantity']++;
